@@ -46,6 +46,19 @@ def thread_fill_op_list():
 	We must query twitch's chatters log (info about all the viewers
 	for a particular streamer's channel), which returns a JSON formatted
 	response, which we will use to fill our op_list.
+
+	The response will look like:
+		{
+		  "_links": {},
+		  "chatter_count": 0,
+		  "chatters": {
+		    "moderators": [],
+		    "staff": [],
+		    "admins": [],
+		    "global_mods": [],
+		    "viewers": []
+		  }
+		}
 	"""
 	while True:
 		try:
