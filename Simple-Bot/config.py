@@ -14,8 +14,8 @@ PORT = 6667
 
 # Add your own bot's info here.
 # Keep the PASS part secret so that other users can't mess with your bot.
-PASS = "" #oauth key you get from twitchapps.tmi
-IDENT = "" # Twitch username for the bot. 
-CHANNEL = "" # The streamer's name whose chat you want to connect to.
+PASS = "" 		# oauth key you get from twitchapps.tmi
+IDENT = ""  	# Twitch username for the bot. 
+CHANNEL = "" 	# The streamer's name whose chat you want to connect to.
 
 
