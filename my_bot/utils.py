@@ -62,10 +62,10 @@ def thread_fill_op_list():
 	"""
 	while True:
 		try:
-			url = "http://tmi.twitch.tv/group/{}/chatters".format(cfg.CHAN)
+			url = "http://tmi.twitch.tv/group/user/{}/chatters".format(cfg.CHAN)
 			req = urllib2.Request(url, headers={"accept": "*/*"})
 			resp = urllib2.urlopen(req).read()
-			if resp.find("502 Bad Gateway") == -1:
+			if resp.find("502 Bad Gateway") == -1:	# Sometimes we can't connect
 				cfg.op_list.clear()
 				data = json.loads(resp)
 				chatters = data["chatters"]
@@ -80,7 +80,7 @@ def thread_fill_op_list():
 		except:
 			pass
 
-		sleep(5)
+		time.sleep(3)
 
 
 def is_op(user):
