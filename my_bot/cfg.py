@@ -1,10 +1,10 @@
 # Configurations for the bot
 
-HOST = "irc.twitch.tv"
+HOST = "irc.chat.twitch.tv"
 PORT = 6667
-NICK = "fpskhang" 	# Twitch username you made for the bot.
-PASS = ""	# Password you got from twitchapps.tmi
-CHAN = "dulangkhang"	# The username of the account you'll be streaming on.
+NICK = "fpskhang"   # Twitch username you made for the bot.
+PASS = "" # OAuth key from twitchapps.tmi
+CHAN = "dulangkhang"    # The username of the streamer's chat to connect to.
 
 # The IRC server only lets you send AT MOST 20 messages every 30 seconds
 # Doing more would disconnect the bot.
